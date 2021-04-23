@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Site Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="page">
+    <div class="loginbox">
+       <div class="buttonbox">
+          <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button> 
+            <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button> 
+       </div>
+       <form id="login" class="input-group" action="dashBoard.html">
+         <input id="l-user-name" type="text" class="input-field" placeholder="User Id" required>
+         <label id="l-error-username" class="error-field">Invalid username</label>
+         <input id="l-pass-word" type="password" class="input-field" placeholder="Enter Password" required>
+         <label id="l-error-password" class="error-field">Must contain 6 values where at least one numeric digit, one uppercase and one lowercase letter is present</label>
+           <input type="checkbox" class="check-box"><span> Remember Password</span>
+         <button onclick="return validationLogin()" type="submit" class="submit-btn">Log In</button>
+       </form>
+       <form id="signup" class="input-group" onsubmit="return validationSignUp()">
+         <input id="s-user-name" type="text" class="input-field" placeholder="User Id" required>
+         <label id="s-error-username" class="error-field">Invalid username</label>
+         <input id="s-email-id" type="text" class="input-field" placeholder="Email Id" required>
+         <label id="s-error-email" class="error-field">Invalid email</label>
+         <input id="pass-word" type="password" class="input-field" placeholder="Enter Password" required>
+         <label id="s-error-password" class="error-field">Invalid Password</label>
+         <button id="submit-btn" type="submit" class="submit-btn">Sign Up</button>
+       </form>
+    </div>
+ </div>
+    <script>
+       var x=document.getElementById("login");
+       var y=document.getElementById("signup");
+       var z=document.getElementById("btn");
+       
+        function signup()
+        {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login()
+        {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+</html>
+<script src="loginPage.js" text="text/javascript"></script>
