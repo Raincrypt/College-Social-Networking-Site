@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.page
+{
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/.images/login_background.jpg); 
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+}
+
+.loginbox
+{
+    width: 380px;
+    height: 435px;
+    position:relative;
+    margin:6% auto;
+    background:linear-gradient(to right,#FFC0CB,#B0E0E6);
+    border-style: solid;
+    border-width: medium;
+    border-color: blueviolet;
+    padding: 10px;
+    overflow:hidden;
+}
+
+.buttonbox
+{   
+    width: 220px;
+    margin: 35px auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #FFC0CB;
+    border-radius: 30px;
+     
+} 
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background:transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn
+{
+    top:0;
+    left:0;
+    position: absolute;
+    width:110px;
+    height:100%;
+    background: linear-gradient(to right,#C71585,#191970);
+    border-radius: 30px;
+    transition: .5s;   
+}
+
+.input-group
+{
+    top: 180px;
+    position: absolute;
+    margin: -25px -7px;
+    width: 310px;
+    transition: .5s;
+}
+
+.input-field
+{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn
+{   
+    
+    width: 75%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 45px 42px;
+    background: linear-gradient(to right,#C71585,#191970);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box
+{
+    bottom: 67px;
+    left: 175px;
+    margin: 30px 10px 30px 0;
+    position: absolute; 
+}
+span
+{
+    color: #777;
+    font-size: 12px;
+    bottom: 96px;
+    left: 194px;
+    position: absolute;     
+}
+#login
+{
+    left: 50px;
+}
+#signup
+{
+    left: 450px;
+}
+.error-field
+{
+    color: rgb(134, 0, 0);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+#l-error-username{
+    visibility: hidden;
+    transition: .5s;  
+}
+#l-error-password{
+    visibility: hidden;
+    transition: .5s;  
+}
+#s-error-password{
+    visibility: hidden;
+    transition: .5s;  
+}
+#s-error-username{
+    visibility: hidden;
+    transition: .5s;  
+}
+#s-error-email{
+    visibility: hidden;
+    transition: .5s;  
+}
